@@ -1,0 +1,95 @@
+.strip {
+  background-image: linear-gradient(
+    to top right,
+    #e67e22,
+    rgba(247, 125, 10, 0.9)
+  );
+  width: 50px;
+  position: fixed;
+  top: 30%;
+  right: -22px;
+  opacity: 0.8;
+  border-radius: 24px;
+  padding: 6px;
+  filter: grayscale(50%);
+  z-index: 2;
+}
+.strip:hover {
+  right: 0px;
+  opacity: 1;
+  filter: grayscale(0);
+  transition: 0.1s;
+}
+.social-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  row-gap: 36px;
+  padding: 8px;
+}
+.social {
+  height: 36px;
+  filter: grayscale(10%);
+  width: 32px;
+}
+/* Left right btn  */
+.btn {
+  background-color: #ddd;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  opacity: 0.25;
+}
+.btn--left {
+  left: 5.5rem;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn--right {
+  right: 5.5rem;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.btn-icon {
+  height: 24px;
+  width: 28px;
+  stroke: #222;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+/* Dot  */
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -12px);
+  display: flex;
+  gap: 12px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.9);
+  opacity: 0.4;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot--fill {
+  background-color: #666;
+  opacity: 0.6;
+}
+.dot:hover {
+  opacity: 0.9;
+  background-color: #c0c0c0;
+}
